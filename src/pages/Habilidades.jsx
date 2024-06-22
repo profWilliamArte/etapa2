@@ -11,7 +11,9 @@ const Habilidades = () => {
 
       <h5 className="text-center py-4 lead fs-1">Etapa 2</h5>
       <div className="col-lg-7 mx-auto">
-        <p className="lead text-center fs-5 fs-bold">Lanza tu carrera en el apasionante mundo del desarrollo web con React, la biblioteca JavaScript líder para crear interfaces dinámicas e interactivas. En la Etapa 1, te sumergirás en ejercicios prácticos que te permitirán adquirir habilidades esenciales y convertirte en un desarrollador web Full Stack.</p>
+        <p className="lead text-center fs-5 fs-bold">
+¡Eleva tu proyecto al siguiente nivel con React!
+¿Estás listo para llevar tu página web al siguiente nivel? En la segunda etapa de nuestro curso, te sumergirás en el apasionante mundo de React y descubrirás cómo crear interfaces atractivas y funcionales con las herramientas más populares de desarrollo web. Aprende a implementar un buscador potente, diseñar con Bootstrap y paginar resultados. Aprovecha el poder de DummyJSON para enfocarte en aprender las habilidades prácticas que necesitas para crear aplicaciones React reales y funcionales. </p>
       </div>
 
       <div className="row">
