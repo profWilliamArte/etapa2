@@ -1,0 +1,77 @@
+https://www.svgrepo.com/svg/354262/react-router
+1) npm create vite@latest .
+2) npm install react-router-dom
+3) npm install bootstrap@5.3.3
+    en index.html agregar estas lineas 
+        despues del </title> 
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        andes del </body>
+        <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+    
+    limpiar app.css, index.css 
+    limpiar el archivo app.jsx y aplicar el rafce 
+    agregar las clases text-center py-4 y verificar si tenemos todo bien
+
+4) crear las carpetas pages y components dentro de src
+5) crear los componentes  Header.jsx, Footer.jsx y "aplicar el rafce"
+    - importar el navbar y un footer de bootstrap 
+    - configurar el color y agragar el logo
+    - import logo from '../assets/logo.jpg' el logo debe estar en assets
+    - adaptar el menu a Ininio, Movil, Laptop, Tienda, Categorias, Contactos
+
+6) crear dentro de page las paginas Inicio, Tienda, Movil, Laptop, Categorias, Contactos 
+    "aplicar el rafce" y h3 con las clases text-center py-4
+7) crear el sistema de ruteo comenzando por el app.jsx en la zona de renderizado
+    <BrowserRouter>
+        <Header/>
+        <Routes>
+            <Route path="/" element={<Inicio/>} />
+            <Route path="/tienda" element={<Tienda/>} />
+            <Route path="/laptop" element={<Laptop/>} />
+            <Route path="/movil" element={<Movil/>} />
+            <Route path="/categorias/:id" element={<Categorias/>} />
+            <Route path="/contactos" element={<Contactos/>} />
+            <Route path="*" element={<Inicio/>} />
+        </Routes>
+        <Footer/>
+    </BrowserRouter>
+    verificar la navegacion desde localhost:5137/tienda y todas las demas
+8) ahora crear la otra parte de la navegacion desde el componente Header
+     <Link to="/inicio" className="nav-link active" aria-current="page" href="/">Inicio</Link> 
+     cambiando el a por Link to="/movil" con la ruta a la paginas
+9) crear un componente carrusel y agregarlo en la pagina inicio, no olvidar el fragment
+10) programar el fetch de datos en Movil.jsx y crear el componente Cardprod.jsx para mostrar los productos 
+
+
+Habilidades que dominarás al practicar con ejercicios de la etapa 1:
+
+1) Instalación y configuración:
+    Instalar y configurar React o Vite, 
+    herramientas esenciales para el desarrollo de aplicaciones React.
+2) Librerías CSS:
+    Implementar librerías CSS como Bootstrap o react-bootstrap 
+    para diseñar interfaces atractivas y responsivas.
+3) Rutas y navegación:
+    Crear y gestionar rutas de navegación con react-router-dom 
+    para estructurar tu aplicación y facilitar la navegación entre diferentes secciones.
+4) Componentes estáticos:
+    Diseñar y desarrollar componentes estáticos como 
+    Header, Footer y Carrusel para crear una base sólida para tu aplicación.
+5) Hooks de React:
+    Dominar los hooks useState y useEffect 
+    para manejar el estado y los efectos secundarios en tus componentes de forma eficiente.
+6) Consumo de APIs:
+    Conectarte a APIs externas 
+    como dummyjson.com, thecocktaildb.com, api.themoviedb.org y themealdb.com 
+    para obtener datos y enriquecer tu aplicación.
+    estos datos deben se mostrados en un un componente Cardprod.jsx
+7) Rutas dinámicas:
+    Implementar rutas dinámicas con useParams 
+    para mostrar contenido específico en función de la URL.
+8) Modales Bootstrap:
+    Crear y utilizar modales Bootstrap 
+    para mostrar información detallada o formularios de forma modal.
+9)
+
+
+
